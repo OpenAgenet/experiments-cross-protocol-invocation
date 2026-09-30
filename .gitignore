@@ -3,5 +3,10 @@ node_modules/
 target/
 results/*
 !results/.gitkeep
+!results/*/comparison-summary.csv
+!results/*/*.png
+!results/*/*.pdf
 configs/local.json
 *.log
+__pycache__/
+*.pyc

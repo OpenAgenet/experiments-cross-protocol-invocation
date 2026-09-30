@@ -2,7 +2,9 @@
 name = "experiments-cross-protocol-invocation"
 version = "0.1.0"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = ["matplotlib>=3.11,<4"]
 
 [project.scripts]
 oan-task-chain = "runners.task_chain:main"
+oan-summarize = "analysis.summarize:main"
+oan-plot-results = "analysis.plot_results:main"
