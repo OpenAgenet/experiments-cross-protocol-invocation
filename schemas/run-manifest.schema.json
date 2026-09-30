@@ -1,0 +1,1 @@
+{"type":"object","required":["runId","seed","coreCommit","configSha256"],"properties":{"runId":{"type":"string"},"seed":{"type":"integer"},"coreCommit":{"type":"object"},"configSha256":{"type":"string"},"outputs":{"type":"array"}}}

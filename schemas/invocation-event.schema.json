@@ -1,0 +1,1 @@
+{"type":"object","required":["runId","taskId","stepId","decision","nativeCallIssued"],"properties":{"runId":{"type":"string"},"taskId":{"type":"string"},"stepId":{"type":"string"},"decision":{"enum":["allow","block","fallback"]},"nativeCallIssued":{"type":"boolean"},"blockReason":{"type":["string","null"]}}}

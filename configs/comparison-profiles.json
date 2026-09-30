@@ -1,0 +1,23 @@
+{
+  "profiles": [
+    {
+      "id": "split",
+      "unifiedEnvelope": false,
+      "fullVerification": false,
+      "fallback": "protocol-local"
+    },
+    {
+      "id": "unverified-unified",
+      "unifiedEnvelope": true,
+      "fullVerification": false,
+      "fallback": "none"
+    },
+    {
+      "id": "trusted-unified",
+      "unifiedEnvelope": true,
+      "fullVerification": true,
+      "fallback": "one-verified-candidate"
+    }
+  ],
+  "pairedFactors": ["sourceArtifacts", "taskChain", "mockResponses", "faultProfile", "networkProfile", "seed", "repetitions"]
+}

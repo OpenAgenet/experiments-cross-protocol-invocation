@@ -1,0 +1,8 @@
+{
+  "name": "experiments-cross-protocol-invocation",
+  "private": true,
+  "type": "module",
+  "scripts": { "typecheck": "tsc --noEmit", "probe": "tsx runners/probe.ts", "validate:resources": "tsx runners/validate-resources.ts" },
+  "dependencies": { "@openagenet/oan-sdk-ts": "file:../oan-sdk-ts" },
+  "devDependencies": { "@types/node": "^22.0.0", "tsx": "^4.21.0", "typescript": "^6.0.3" }
+}

@@ -1,0 +1,7 @@
+node_modules/
+.venv/
+target/
+results/*
+!results/.gitkeep
+configs/local.json
+*.log

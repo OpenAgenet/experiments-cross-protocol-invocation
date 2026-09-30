@@ -1,0 +1,18 @@
+{
+  "endpoints": {
+    "registrar": "http://127.0.0.1:REGISTRAR_PORT",
+    "root": "http://127.0.0.1:ROOT_PORT",
+    "cdn": "http://127.0.0.1:CDN_PORT",
+    "publisher": "http://127.0.0.1:PUBLISHER_PORT",
+    "discovery": "http://127.0.0.1:DISCOVERY_PORT"
+  },
+  "nativeEndpoints": { "mcp": "http://127.0.0.1:MCP_PORT", "a2a": "http://127.0.0.1:A2A_PORT", "skill": "http://127.0.0.1:SKILL_PORT", "openapi": "http://127.0.0.1:OPENAPI_PORT" },
+  "task": { "chain": ["mcp", "skill", "openapi", "a2a"], "repetitions": 1 },
+  "protocols": ["mcp", "skill", "openapi", "a2a"],
+  "verificationProfile": "trusted-unified",
+  "faultProfile": "none",
+  "networkProfile": "local-baseline",
+  "seed": 20261001,
+  "timeoutsMs": { "controlPlane": 10000, "nativeCall": 5000 },
+  "auth": { "genesisDir": "../oan-design-docs/genesis/nodes", "trustIndexer": false }
+}
