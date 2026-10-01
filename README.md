@@ -63,8 +63,8 @@ All profiles use the same source artifacts, task chain, native mock responses, f
 
 The supported experiment path starts an isolated local Root, Registrar, CDN,
 CDN Publisher, and Discovery topology with genesis identities, SQLite files,
-and NATS JetStream. It registers 250 MCP, 250 Skill, 250 OpenAPI, and 250 A2A
-resources by default (1,000 resources in total),
+and NATS JetStream. It registers 50 MCP, 50 Skill, 50 OpenAPI, and 50 A2A
+resources by default (200 resources in total),
 waits for Discovery visibility, and invokes local native endpoints only after
 the control-plane path succeeds. Trust Indexer remains disabled.
 
@@ -77,7 +77,7 @@ python analysis/analyze_real.py --input results/real-oan-local
 ```
 
 `OAN_RESOURCES_PER_PROTOCOL` can override the default population for a quick
-development smoke run; formal experiment runs use the default value `250`.
+development smoke run; formal experiment runs use the default value `50`.
 
 The runner fails closed if the local OAN topology is unavailable and never
 labels an emulation result as a real experiment.
