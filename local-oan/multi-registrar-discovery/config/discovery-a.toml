@@ -1,0 +1,20 @@
+[server]
+host = "127.0.0.1"
+port = 8103
+endpoint = "http://localhost:8103"
+
+[node]
+name = "Discovery Node A"
+role = "discovery"
+did_semantic_code = "AGDA"
+
+[upstream]
+root_endpoint = "http://localhost:8100"
+cdn_endpoint = "http://localhost:8105"
+
+[paths]
+data_dir = "../../.oan-multi-node-demo/discovery-a"
+index_dir = "../../.oan-multi-node-demo/discovery-a/index"
+database_url = "postgres://postgres:postgres@127.0.0.1:5432/oan_multi_discovery_a"
+keys_dir = "../../.oan-multi-node-demo/discovery-a/keys"
+

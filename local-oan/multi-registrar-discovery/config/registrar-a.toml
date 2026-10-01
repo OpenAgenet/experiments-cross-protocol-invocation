@@ -1,0 +1,22 @@
+[server]
+host = "127.0.0.1"
+port = 8101
+endpoint = "http://localhost:8101"
+
+[node]
+name = "Registrar Node A"
+role = "registrar"
+did_semantic_code = "AGRA"
+
+[upstream]
+root_endpoint = "http://localhost:8100"
+
+[security.upstream]
+protocol_label = "ans-2026"
+root_did = "did:oan:AGRT:PLACEHOLDER"
+
+[paths]
+data_dir = "../../.oan-multi-node-demo/registrar-a"
+records_dir = "../../.oan-multi-node-demo/registrar-a/records"
+keys_dir = "../../.oan-multi-node-demo/registrar-a/keys"
+database_url = "postgres://postgres:postgres@127.0.0.1:5432/oan_multi_registrar_a"

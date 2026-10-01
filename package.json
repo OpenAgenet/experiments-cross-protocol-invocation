@@ -2,7 +2,7 @@
   "name": "experiments-cross-protocol-invocation",
   "private": true,
   "type": "module",
-  "scripts": { "typecheck": "tsc --noEmit", "probe": "tsx runners/probe.ts", "validate:resources": "tsx runners/validate-resources.ts" },
+  "scripts": { "typecheck": "tsc --noEmit", "probe": "tsx runners/probe.ts", "validate:resources": "tsx runners/validate-resources.ts", "run:real": "tsx runners/run-real.ts", "analyze:real": "python analysis/analyze_real.py" },
   "dependencies": { "@openagenet/oan-sdk-ts": "file:../oan-sdk-ts" },
   "devDependencies": { "@types/node": "^22.0.0", "tsx": "^4.21.0", "typescript": "^6.0.3" }
 }
